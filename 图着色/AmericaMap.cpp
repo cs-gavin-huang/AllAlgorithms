@@ -1,4 +1,3 @@
-//https://blog.csdn.net/zealfory/article/details/42744245
 #include<iostream>
 #include<iomanip>
 #include <string>
@@ -154,7 +153,7 @@ void trycolor(int s,Graph G)//s为着色的起点，本算法从0开始
  
  
  
-void main()//主函数
+int main()//主函数
 {
 	cout<<"     ....美国地图着色Loading....  "<<endl;
  
@@ -167,6 +166,6 @@ void main()//主函数
 	PrintGraph(G);
 	cout<<"美国地图着色方案:\n";
 	trycolor(0,G);//着色
- 
+	return 0;
 	
 }
