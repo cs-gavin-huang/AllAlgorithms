@@ -27,7 +27,7 @@ void inforc()
 //输入地图的信息
 void CreateGraph(Graph &G)
 {
-	G.vnum=50;
+	G.vnum=34;
 	G.arcnum=233;
 	//初始化矩阵
 	for(int i=0;i<50;i++)
