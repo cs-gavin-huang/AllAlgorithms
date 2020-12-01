@@ -1,4 +1,4 @@
-//https://blog.csdn.net/zealfory/article/details/42744245
+
 #include<iostream>
 #include<iomanip>
 #include <string>
@@ -151,7 +151,6 @@ void trycolor(int s,Graph G)//s为着色的起点，本算法从0开始
 	if(s>G.vnum)//递归出口
 	{
 		output(G);
-		system("pause");
 		exit(1);
 	}
 	else
