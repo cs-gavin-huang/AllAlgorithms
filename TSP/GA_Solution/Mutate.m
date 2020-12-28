@@ -1,14 +1,10 @@
-%
-%      @×÷Õß£ºËæĞÄ390
-%      @Î¢ĞÅ¹«ÖÚºÅ£ºÓÅ»¯Ëã·¨½»Á÷µØ
-%
-%% ±äÒì²Ù×÷
-%ÊäÈëSelCh£º           ±»Ñ¡ÔñµÄ¸öÌå
-%ÊäÈëPm£º              ±äÒì¸ÅÂÊ
-%ÊäÈëpSwap£º           Ñ¡Ôñ½»»»½á¹¹µÄ¸ÅÂÊ
-%ÊäÈëpReversion£º      Ñ¡ÔñÄæ×ª½á¹¹µÄ¸ÅÂÊ
-%ÊäÈëpInsertion£º      Ñ¡Ôñ²åÈë½á¹¹µÄ¸ÅÂÊ
-%Êä³öSelCh£º           ±äÒìºóµÄ¸öÌå
+%% å˜å¼‚æ“ä½œ
+%è¾“å…¥SelChï¼š           è¢«é€‰æ‹©çš„ä¸ªä½“
+%è¾“å…¥Pmï¼š              å˜å¼‚æ¦‚ç‡
+%è¾“å…¥pSwapï¼š           é€‰æ‹©äº¤æ¢ç»“æ„çš„æ¦‚ç‡
+%è¾“å…¥pReversionï¼š      é€‰æ‹©é€†è½¬ç»“æ„çš„æ¦‚ç‡
+%è¾“å…¥pInsertionï¼š      é€‰æ‹©æ’å…¥ç»“æ„çš„æ¦‚ç‡
+%è¾“å‡ºSelChï¼š           å˜å¼‚åçš„ä¸ªä½“
 function SelCh=Mutate(SelCh,Pm,pSwap,pReversion,pInsertion)
 NSel=size(SelCh,1);
 for i=1:NSel
@@ -16,13 +12,13 @@ for i=1:NSel
         index=Roulette(pSwap,pReversion,pInsertion);
         route1=SelCh(i,:);
         if index==1
-            %½»»»½á¹¹
+            %äº¤æ¢ç»“æ„
             route2=Swap(route1);
         elseif index==2
-            %Äæ×ª½á¹¹
+            %é€†è½¬ç»“æ„
             route2=Reversion(route1);
         else
-            %²åÈë½á¹¹
+            %æ’å…¥ç»“æ„
             route2=Insertion(route1);
         end
         SelCh(i,:)=route2;

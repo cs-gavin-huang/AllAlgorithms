@@ -1,9 +1,6 @@
 %
-%      @×÷Õß£ºËæĞÄ390
-%      @Î¢ĞÅ¹«ÖÚºÅ£ºÓÅ»¯Ëã·¨½»Á÷µØ
-%
-%ÊäÈëroute£º           Â·Ïß
-%ÊäÈëx,y£º             x,y×ø±ê
+%è¾“å…¥routeï¼š           è·¯çº¿
+%è¾“å…¥x,yï¼š             x,yåæ ‡
 function PlotRoute(route,x,y)
 route=[route route(1)];
 plot(x(route),y(route),'k-o','MarkerSize',10,'MarkerFaceColor','w','LineWidth',1.5);

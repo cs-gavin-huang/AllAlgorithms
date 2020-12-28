@@ -1,16 +1,12 @@
-%
-%      @×÷Õß£ºËæÐÄ390
-%      @Î¢ÐÅ¹«ÖÚºÅ£ºÓÅ»¯Ëã·¨½»Á÷µØ
-%
-%% ¼ÆËãÖÖÈºÄ¿±êº¯ÊýÖµ£¬¼´Ã¿¸ö¸öÌåµÄ×Ü¾àÀë
-%ÊäÈëChrom£º           ÖÖÈº
-%ÊäÈëdist£º            ¾àÀë¾ØÕó
-%Êä³öObj£º             Ã¿¸ö¸öÌåµÄÄ¿±êº¯ÊýÖµ£¬¼´Ã¿¸ö¸öÌåµÄ×Ü¾àÀë
+%% è®¡ç®—ç§ç¾¤ç›®æ ‡å‡½æ•°å€¼ï¼Œå³æ¯ä¸ªä¸ªä½“çš„æ€»è·ç¦»
+%è¾“å…¥Chromï¼š           ç§ç¾¤
+%è¾“å…¥distï¼š            è·ç¦»çŸ©é˜µ
+%è¾“å‡ºObjï¼š             æ¯ä¸ªä¸ªä½“çš„ç›®æ ‡å‡½æ•°å€¼ï¼Œå³æ¯ä¸ªä¸ªä½“çš„æ€»è·ç¦»
 function Obj=ObjFunction(Chrom,dist)
-NIND=size(Chrom,1);                     %ÖÖÈº´óÐ¡
-Obj=zeros(NIND,1);                      %Ä¿±êº¯Êý³õÊ¼»¯Îª0
+NIND=size(Chrom,1);                     %ç§ç¾¤å¤§å°
+Obj=zeros(NIND,1);                      %ç›®æ ‡å‡½æ•°åˆå§‹åŒ–ä¸º0
 for i=1:NIND
-    route=Chrom(i,:);                   %µ±Ç°¸öÌå
-    Obj(i,1)=RouteLength(route,dist);   %¼ÆËãµ±Ç°¸öÌåµÄ×Ü¾àÀë
+    route=Chrom(i,:);                   %å½“å‰ä¸ªä½“
+    Obj(i,1)=RouteLength(route,dist);   %è®¡ç®—å½“å‰ä¸ªä½“çš„æ€»è·ç¦»
 end
 end

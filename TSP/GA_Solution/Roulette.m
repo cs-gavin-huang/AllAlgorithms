@@ -1,11 +1,7 @@
-%
-%      @×÷Õß£ºËæÐÄ390
-%      @Î¢ÐÅ¹«ÖÚºÅ£ºÓÅ»¯Ëã·¨½»Á÷µØ
-%
-%ÊäÈëpSwap£º           Ñ¡Ôñ½»»»½á¹¹µÄ¸ÅÂÊ
-%ÊäÈëpReversion£º      Ñ¡ÔñÄæ×ª½á¹¹µÄ¸ÅÂÊ
-%ÊäÈëpInsertion£º      Ñ¡Ôñ²åÈë½á¹¹µÄ¸ÅÂÊ
-%Êä³öindex£º           ×îÖÕÑ¡ÔñÄÄÒ»¸öÁÚÓò½á¹¹£¬¼´ÐòºÅ£º1 2 3
+%è¾“å…¥pSwapï¼š           é€‰æ‹©äº¤æ¢ç»“æž„çš„æ¦‚çŽ‡
+%è¾“å…¥pReversionï¼š      é€‰æ‹©é€†è½¬ç»“æž„çš„æ¦‚çŽ‡
+%è¾“å…¥pInsertionï¼š      é€‰æ‹©æ’å…¥ç»“æž„çš„æ¦‚çŽ‡
+%è¾“å‡ºindexï¼š           æœ€ç»ˆé€‰æ‹©å“ªä¸€ä¸ªé‚»åŸŸç»“æž„ï¼Œå³åºå·ï¼š1 2 3
 function index=Roulette(pSwap,pReversion,pInsertion)
 p=[pSwap pReversion pInsertion];
 r=rand;

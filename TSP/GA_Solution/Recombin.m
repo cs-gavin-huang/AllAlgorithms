@@ -1,17 +1,13 @@
-%
-%      @×÷Õß£ºËæĞÄ390
-%      @Î¢ĞÅ¹«ÖÚºÅ£ºÓÅ»¯Ëã·¨½»Á÷µØ
-%
-%% ½»²æ²Ù×÷
-% ÊäÈë
-%SelCh  ±»Ñ¡ÔñµÄ¸öÌå
-%Pc     ½»²æ¸ÅÂÊ
-%Êä³ö£º
-% SelCh ½»²æºóµÄ¸öÌå
+%% äº¤å‰æ“ä½œ
+% è¾“å…¥
+%SelCh  è¢«é€‰æ‹©çš„ä¸ªä½“
+%Pc     äº¤å‰æ¦‚ç‡
+%è¾“å‡ºï¼š
+% SelCh äº¤å‰åçš„ä¸ªä½“
 function SelCh=Recombin(SelCh,Pc)
 NSel=size(SelCh,1);
 for i=1:2:NSel-mod(NSel,2)
-    if Pc>=rand %½»²æ¸ÅÂÊPc
+    if Pc>=rand %äº¤å‰æ¦‚ç‡Pc
         [SelCh(i,:),SelCh(i+1,:)]=OX(SelCh(i,:),SelCh(i+1,:));
     end
 end

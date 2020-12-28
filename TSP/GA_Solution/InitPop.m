@@ -1,14 +1,10 @@
-%
-%      @×÷Õß£ºËæÐÄ390
-%      @Î¢ÐÅ¹«ÖÚºÅ£ºÓÅ»¯Ëã·¨½»Á÷µØ
-%
-%% ÖÖÈº³õÊ¼»¯
-%ÊäÈëNIND£º        ÖÖÈº´óÐ¡
-%ÊäÈëN£º           È¾É«Ìå³¤¶È
-%Êä³öChrom£º       Ëæ»úÉú³ÉµÄ³õÊ¼ÖÖÈº
+%% ç§ç¾¤åˆå§‹åŒ–
+%è¾“å…¥NINDï¼š        ç§ç¾¤å¤§å°
+%è¾“å…¥Nï¼š           æŸ“è‰²ä½“é•¿åº¦
+%è¾“å‡ºChromï¼š       éšæœºç”Ÿæˆçš„åˆå§‹ç§ç¾¤
 function Chrom=InitPop(NIND,N)
-Chrom=zeros(NIND,N);                %ÖÖÈº³õÊ¼»¯ÎªNINDÐÐNÁÐµÄÁã¾ØÕó
+Chrom=zeros(NIND,N);                %ç§ç¾¤åˆå§‹åŒ–ä¸ºNINDè¡ŒNåˆ—çš„é›¶çŸ©é˜µ
 for i=1:NIND
-    Chrom(i,:)=randperm(N);         %Ã¿¸ö¸öÌåÎª1~NµÄËæ»úÅÅÁÐ
+    Chrom(i,:)=randperm(N);         %æ¯ä¸ªä¸ªä½“ä¸º1~Nçš„éšæœºæŽ’åˆ—
 end
 end
